@@ -152,10 +152,6 @@ action stripeCreditsPayment {
   entities: [User]
 }
 
-action getLnLoginUrl {
-  fn: import { getLnLoginUrl } from "@src/server/ln.js",
-  entities: [User, LnData]
-}
 
 action decodeInvoice {
   fn: import { decodeInvoice } from "@src/server/ln.js",
@@ -197,10 +193,6 @@ query getUserInfo {
   entities: [User]
 }
 
-query getLnUserInfo {
-  fn: import { getLnUserInfo } from "@src/server/ln.js",
-  entities: [User, LnData]
-}
 
 query getCoverLetterCount {
   fn: import { getCoverLetterCount } from "@src/server/queries.js",
@@ -217,11 +209,6 @@ api stripeWebhook {
   httpRoute: (POST, "/stripe-webhook")
 }
 
-api lnLogin {
-  fn: import { lnLogin } from "@src/server/ln.js",
-  entities: [User, LnData],
-  httpRoute: (GET, "/ln-login")
-}
 
 /* 🕵️‍♂️ These are the Wasp Cron Jobs. Use them to set up recurring tasks or queues:
  * https://wasp-lang.dev/docs/language/features#jobs
