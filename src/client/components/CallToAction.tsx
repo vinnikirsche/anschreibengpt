@@ -11,7 +11,7 @@ export function Footer() {
           <HStack justify='center'>
             <FaGithub />
             <Text fontSize='sm' color='purple.300'>
-              Built with Wasp & 100% Open-Source
+              Entwickelt mit Wasp & komplett Open Source
             </Text>
           </HStack>
         </Link>
@@ -20,18 +20,18 @@ export function Footer() {
           <HStack justify='center'>
             <FaTwitter />
             <Text fontSize='sm' color='purple.300'>
-              Follow me on Txitter
+              Folge mir auf Txitter
             </Text>
           </HStack>
         </Link>
         <WaspLink to='/tos'>
           <Text fontSize='sm' color='purple.300'>
-            Terms of Service
+            Nutzungsbedingungen
           </Text>
         </WaspLink>
         <WaspLink to='/privacy'>
           <Text fontSize='sm' color='purple.300'>
-            Privacy Policy
+            Datenschutzrichtlinie
           </Text>
         </WaspLink>
       </VStack>

@@ -60,9 +60,9 @@ export default function ProfilePage({ user }: { user: User }) {
             </VStack>
           ) : userInfo.hasPaid && !userInfo.isUsingLn ? (
             <VStack gap={3} pt={5} alignItems='flex-start'>
-              <Text textAlign='initial'>Thanks so much for your support!</Text>
+              <Text textAlign='initial'>Vielen Dank für deine Unterstützung!</Text>
 
-              <Text textAlign='initial'>You have unlimited access to CoverLetterGPT using {user?.gptModel === 'gpt-4' || user?.gptModel === 'gpt-4o' ? 'GPT-4o.' : 'GPT-4o-mini.'}</Text>
+              <Text textAlign='initial'>Du hast unbegrenzten Zugriff auf CoverLetterGPT mit {user?.gptModel === 'gpt-4' || user?.gptModel === 'gpt-4o' ? 'GPT-4o.' : 'GPT-4o-mini.'}</Text>
 
               {userInfo.subscriptionStatus === 'canceled' && (
                 <Code alignSelf='center' fontSize='lg'>
@@ -79,9 +79,9 @@ export default function ProfilePage({ user }: { user: User }) {
           ) : (
             !userInfo.isUsingLn && (
               <HStack pt={3} textAlign='center'>
-                <Heading size='sm'>You have </Heading>
+                <Heading size='sm'>Du hast </Heading>
                 <Code>{userInfo?.credits ? userInfo.credits : '0'}</Code>
-                <Heading size='sm'>cover letter{userInfo?.credits === 1 ? '' : 's'} left</Heading>
+                <Heading size='sm'>Anschreiben verbleibend</Heading>
               </HStack>
             )
           )}
@@ -114,14 +114,14 @@ export default function ProfilePage({ user }: { user: User }) {
                     <VStack gap={3} alignItems='start'>
                       <Heading size='xl'>$2.95</Heading>
                       <Text textAlign='start' fontSize='md'>
-                        Unlimited
+                        Unbegrenztes
                         <br />
-                        monthly subscription
+                        Monatsabo
                       </Text>
-                      <Heading size='md'>Using GPT-4o-mini 🚀</Heading>
+                      <Heading size='md'>Nutze GPT-4o-mini 🚀</Heading>
                     </VStack>
                     <Button mr={3} isLoading={isLoading} onClick={handleBuy4oMini}>
-                      Buy Now!
+                      Jetzt kaufen!
                     </Button>
                   </VStack>
                   <VStack layerStyle='cardMd' borderColor={'purple.200'} borderWidth={3} py={5} px={7} gap={3} height='100%' width='100%' justifyContent='space-between' alignItems='center'>
@@ -129,12 +129,12 @@ export default function ProfilePage({ user }: { user: User }) {
                       <Heading size='xl'>$5.95</Heading>
 
                       <Text textAlign='start' fontSize='md'>
-                        Unlimited <br /> monthly subscription
+                        Unbegrenztes <br /> Monatsabo
                       </Text>
-                      <Heading size='md'>Using GPT-4o 🤖</Heading>
+                      <Heading size='md'>Nutze GPT-4o 🤖</Heading>
                     </VStack>
                     <Button colorScheme='purple' mr={3} isLoading={isGpt4loading} onClick={handleBuy4o}>
-                      💰 Buy Now!
+                      💰 Jetzt kaufen!
                     </Button>
                   </VStack>
                 </HStack>
@@ -149,10 +149,10 @@ export default function ProfilePage({ user }: { user: User }) {
                     <VStack gap={3} alignItems='center'>
                       <Heading size='xl'>⚡️</Heading>
                       <Text textAlign='start' fontSize='md'>
-                        You have affordable, pay-per-use access to CoverLetterGPT with GPT-4o via the Lightning Network
+                        Du hast günstigen Pay-per-Use-Zugang zu CoverLetterGPT mit GPT-4o über das Lightning-Netzwerk
                       </Text>
                       <Text textAlign='start' fontSize='sm'>
-                        Note: if you prefer a montly subscription, please logout and sign in with Google.
+                        Hinweis: Wenn du ein Monatsabo bevorzugst, melde dich bitte ab und melde dich mit Google an.
                       </Text>
                     </VStack>
                   </VStack>
@@ -161,7 +161,7 @@ export default function ProfilePage({ user }: { user: User }) {
             </VStack>
           )}
           <Button alignSelf='flex-end' size='sm' onClick={() => logout()}>
-            Logout
+            Abmelden
           </Button>
         </>
       ) : (

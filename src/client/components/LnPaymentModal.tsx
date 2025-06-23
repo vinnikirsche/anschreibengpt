@@ -183,22 +183,22 @@ export default function LnPaymentModal({ lightningInvoice, isOpen, onClose }: In
     <Modal isOpen={isOpen} onClose={handleCloseClick} initialFocusRef={copyButtonRef}>
       <ModalOverlay backdropFilter='auto' backdropInvert='15%' backdropBlur='2px' />
       <ModalContent maxH='lg' maxW='lg' bgColor='bg-modal'>
-        <ModalHeader>Lightning Invoice</ModalHeader>
+        <ModalHeader>Lightning-Rechnung</ModalHeader>
         <ModalCloseButton visibility={isPaying ? 'hidden' : 'visible'} />
         <ModalBody>
           <VStack gap={3}>
             <Box>{content}</Box>
             <p className='mb-2 text-center'>
-              Pay ~${amountCents ? amountCents.toFixed(2) : <Spinner size='xs' mx={4} />} for the API call
+              Bezahle ~${amountCents ? amountCents.toFixed(2) : <Spinner size='xs' mx={4} />} für den API-Aufruf
             </p>
             <HStack gap={3} visibility={isPaying ? 'hidden' : 'visible'}>
               <Button id='copy-button' ref={copyButtonRef} onClick={handleCopyClick}>
-                Copy
+                Kopieren
               </Button>
               {!!lightningInvoice && (
                 <a href={`lightning:${lightningInvoice.pr}`}>
                   <Button id='open-button' onClick={() => setIsPaying(true)}>
-                    Open in ⚡ Wallet
+                    In ⚡ Wallet öffnen
                   </Button>
                 </a>
               )}
@@ -207,7 +207,7 @@ export default function LnPaymentModal({ lightningInvoice, isOpen, onClose }: In
         </ModalBody>
         <ModalFooter>
           <Button size='sm' variant='outline' isDisabled={isPaying} onClick={handleCloseClick}>
-            Close
+            Schließen
           </Button>
         </ModalFooter>
       </ModalContent>

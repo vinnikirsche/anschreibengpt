@@ -19,273 +19,235 @@ const TermsOfService = () => {
   return (
     <BorderBox>
       <VStack maxW='4xl' mx='auto' p={6} spacing={6} align='flex-start'>
-        <Heading as='h1' size='xl' mb={6}>Terms of Service</Heading>
+        <Heading as='h1' size='xl' mb={6}>Nutzungsbedingungen</Heading>
         <Text fontSize='sm' color='gray.600' mb={6}>Last updated: {new Date().toLocaleDateString()}</Text>
 
-        <LegalSection title='1. Company Information (Impressum)'>
+        <LegalSection title='1. Unternehmensangaben (Impressum)'>
           <Text>
             Canger & Shahab Crimpin GbR
             <br />
-            Zum Steinberg 12, 69121 Heidelberg, Germany
+            Zum Steinberg 12, 69121 Heidelberg, Deutschland
             <br />
-            Email: info.crimpin@gmail@.com
+            E-Mail: info.crimpin@gmail.com
             <br />
-            Partners: Canger & Shahab Crimpin GbR
+            Vertretungsberechtigte Gesellschafter: Canger & Shahab Crimpin GbR
           </Text>
         </LegalSection>
 
-        <LegalSection title='2. Description of Service'>
+        <LegalSection title='2. Leistungsbeschreibung'>
           <Text>
-            CoverLetterGPT is a SaaS application that uses AI technology to assist users in creating personalized cover letter examples based on their curriculum vitae (CV) and job descriptions. The service is provided from
-            Germany and is subject to German law.
+            CoverLetterGPT ist eine SaaS-Anwendung, die KI-Technologie nutzt, um Nutzern Beispielanschreiben auf Basis ihres Lebenslaufs und von Stellenbeschreibungen zu erstellen. Der Dienst wird in Deutschland betrieben und unterliegt deutschem Recht.
           </Text>
         </LegalSection>
 
-        <LegalSection title='3. Contract Formation'>
-          <Text>By registering for our service, you enter into a legally binding contract with Canger & Shahab Crimpin GbR under German law. The contract is formed when we confirm your registration via email.</Text>
+        <LegalSection title='3. Vertragsschluss'>
+          <Text>Mit Ihrer Registrierung kommt unter deutschem Recht ein verbindlicher Vertrag mit der Canger & Shahab Crimpin GbR zustande. Der Vertrag gilt als geschlossen, sobald wir Ihre Anmeldung per E-Mail bestätigen.</Text>
         </LegalSection>
 
-        <LegalSection title='4. User Account and Data Protection'>
-          <Text>To use CoverLetterGPT, you must register for an account and provide accurate and complete information. You are responsible for maintaining the confidentiality of your account and password.</Text>
+        <LegalSection title='4. Nutzerkonto und Datenschutz'>
+          <Text>Zur Nutzung von CoverLetterGPT ist ein Benutzerkonto erforderlich. Sie müssen hierbei korrekte und vollständige Angaben machen und sind für die Geheimhaltung Ihrer Zugangsdaten verantwortlich.</Text>
         </LegalSection>
 
-        <LegalSection title='5. Prices and Payment Terms'>
+        <LegalSection title='5. Preise und Zahlungsbedingungen'>
           <Text>
-            Prices are displayed in your local currency where available, with EUR being our base currency. 
-            All prices include applicable taxes (such as VAT for EU customers). Charges for our services 
-            are billed monthly. Your subscription will automatically renew each month unless cancelled 
-            at least one day before the renewal date.
+            Die Preise werden, soweit möglich, in Ihrer lokalen Währung angezeigt, unsere Basiswährung ist jedoch EUR.
+            Sämtliche Preise verstehen sich inklusive der gesetzlichen Steuern (z.B. Mehrwertsteuer für EU-Kunden).
+            Die Abrechnung unserer Leistungen erfolgt monatlich. Ihr Abonnement verlängert sich automatisch,
+            sofern es nicht mindestens einen Tag vor dem Verlängerungsdatum gekündigt wird.
           </Text>
           <UnorderedList mt={2} spacing={2} pl={5}>
             <ListItem>
-              Prices shown are converted to your local currency based on current exchange rates
+              Angezeigte Preise werden anhand aktueller Wechselkurse in Ihre Währung umgerechnet
             </ListItem>
             <ListItem>
-              The final charge may vary slightly due to exchange rate fluctuations and conversion fees
+              Der endgültige Betrag kann aufgrund von Wechselkursschwankungen und Umrechnungsgebühren geringfügig abweichen
             </ListItem>
             <ListItem>
-              For EU customers, prices include applicable Value Added Tax (VAT)
+              Für EU-Kunden enthalten die Preise die gesetzliche Mehrwertsteuer
             </ListItem>
             <ListItem>
-              For non-EU customers, additional taxes may apply according to local regulations
+              Für Kunden außerhalb der EU können je nach lokalen Vorschriften weitere Steuern anfallen
             </ListItem>
           </UnorderedList>
         </LegalSection>
 
-        <LegalSection title='6. Right of Withdrawal and Withdrawal Form'>
+        <LegalSection title='6. Widerrufsrecht und Muster-Widerrufsformular'>
           <VStack spacing={6} align='stretch'>
             <Box>
               <Text>
-                As a consumer within the EU, you have the right to withdraw from this contract 
-                within 14 days without giving any reason. The withdrawal period expires after 
-                14 days from the day of contract conclusion.
+                Als Verbraucher innerhalb der EU haben Sie das Recht, diesen Vertrag innerhalb von
+                14 Tagen ohne Angabe von Gründen zu widerrufen. Die Widerrufsfrist endet 14 Tage nach
+                dem Tag des Vertragsschlusses.
               </Text>
               
               <Text mt={4}>
-                To exercise your right of withdrawal, you must inform us of your decision to 
-                withdraw from this contract by an unequivocal statement (e.g., a letter sent 
-                by post or email). You may use the model withdrawal form provided below, 
-                but it is not obligatory.
+                Um Ihr Widerrufsrecht auszuüben, müssen Sie uns mittels einer eindeutigen Erklärung
+                (z.B. ein Brief per Post oder E-Mail) über Ihren Entschluss informieren. Sie können dafür
+                das nachstehende Muster-Widerrufsformular verwenden, was jedoch nicht vorgeschrieben ist.
               </Text>
 
               <Text mt={4}>
-                To meet the withdrawal deadline, it is sufficient for you to send your 
-                communication concerning your exercise of the right of withdrawal before the 
-                withdrawal period has expired.
+                Zur Wahrung der Frist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts
+                vor Ablauf der Widerrufsfrist absenden.
               </Text>
 
               <Text mt={4}>
-                Effects of withdrawal: If you withdraw from this contract, we shall reimburse 
-                to you all payments received from you, including the costs of delivery (with 
-                the exception of the supplementary costs resulting from your choice of a type 
-                of delivery other than the least expensive type of standard delivery offered 
-                by us), without undue delay and in any event not later than 14 days from the 
-                day on which we are informed about your decision to withdraw from this contract.
+                Folgen des Widerrufs: Wenn Sie diesen Vertrag widerrufen, erstatten wir Ihnen alle Zahlungen,
+                einschließlich der Lieferkosten (mit Ausnahme zusätzlicher Kosten, die sich daraus ergeben,
+                dass Sie eine andere Art der Lieferung als die von uns angebotene günstigste Standardlieferung
+                gewählt haben), unverzüglich und spätestens binnen 14 Tagen ab dem Tag, an dem die Mitteilung
+                über Ihren Widerruf bei uns eingegangen ist.
               </Text>
             </Box>
 
             <Box p={4} borderWidth={1} borderRadius='lg' bg='bg-contrast-sm'>
-              <Text fontWeight='semibold' mb={4}>
-                Model Withdrawal Form
-              </Text>
+              <Text fontWeight='semibold' mb={4}>Muster-Widerrufsformular</Text>
               <Text mb={4}>
-                (Complete and return this form only if you wish to withdraw from the contract)
+                (Bitte senden Sie dieses Formular nur zurück, wenn Sie den Vertrag widerrufen möchten)
               </Text>
               <VStack align='stretch' spacing={4} color='text-contrast-lg'>
                 <Box>
-                  <Text fontWeight='medium'>To:</Text>
+                  <Text fontWeight='medium'>An:</Text>
                   <Text>Canger & Shahab Crimpin GbR</Text>
-                  <Text>Zum Steinberg 12, 69121 Heidelberg, Germany</Text>
-                  <Text>Email: info.crimpin@gmail.com</Text>
+                  <Text>Zum Steinberg 12, 69121 Heidelberg, Deutschland</Text>
+                  <Text>E-Mail: info.crimpin@gmail.com</Text>
                 </Box>
 
                 <Text>
-                  I/We (*) hereby give notice that I/We (*) withdraw from my/our (*) contract 
-                  for the provision of the following service: CoverLetterGPT subscription.
+                  Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über die Erbringung der folgenden Dienstleistung: CoverLetterGPT-Abonnement.
                 </Text>
 
                 <UnorderedList spacing={2} pl={4}>
-                  <ListItem>Ordered on (*)/received on (*)</ListItem>
-                  <ListItem>Name of consumer(s)</ListItem>
-                  <ListItem>Address of consumer(s)</ListItem>
-                  <ListItem>Signature of consumer(s) (only if this form is notified on paper)</ListItem>
-                  <ListItem>Date</ListItem>
+                  <ListItem>Bestellt am (*)/erhalten am (*)</ListItem>
+                  <ListItem>Name des/der Verbraucher(s)</ListItem>
+                  <ListItem>Anschrift des/der Verbraucher(s)</ListItem>
+                  <ListItem>Unterschrift des/der Verbraucher(s) (nur bei Mitteilung auf Papier)</ListItem>
+                  <ListItem>Datum</ListItem>
                 </UnorderedList>
 
-                <Text fontSize='sm' fontStyle='italic'>
-                  (*) Delete as appropriate
-                </Text>
+                <Text fontSize='sm' fontStyle='italic'>(*) Unzutreffendes streichen.</Text>
               </VStack>
             </Box>
 
             <Text fontSize='sm' color='gray.600'>
-              To exercise your right of withdrawal, you may use the above model form, but 
-              it is not obligatory. You may also submit any other clear statement of your 
-              decision to withdraw from the contract via email or our contact form.
+              Zur Ausübung Ihres Widerrufsrechts können Sie das oben stehende Muster verwenden, dies ist jedoch nicht verpflichtend. Sie können uns Ihren Widerruf auch in anderer Form per E-Mail oder über unser Kontaktformular zukommen lassen.
             </Text>
           </VStack>
         </LegalSection>
 
-        <LegalSection title='7. Dispute Resolution'>
+        <LegalSection title='7. Streitbeilegung'>
           <Text>
-            The European Commission provides a platform for online dispute resolution (OS) which is available at https://ec.europa.eu/consumers/odr/. We are neither obligated nor willing to participate in dispute
-            resolution proceedings before a consumer arbitration board.
+            Die Europäische Kommission stellt unter https://ec.europa.eu/consumers/odr/ eine Plattform zur Online-Streitbeilegung bereit. Wir sind weder verpflichtet noch bereit, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
           </Text>
         </LegalSection>
 
-        <LegalSection title='8. Governing Law'>
-          <Text>These Terms are governed by German law. The application of the UN Convention on Contracts for the International Sale of Goods is excluded.</Text>
+        <LegalSection title='8. Anwendbares Recht'>
+          <Text>Diese Bedingungen unterliegen deutschem Recht. Die Anwendung des UN-Kaufrechts ist ausgeschlossen.</Text>
         </LegalSection>
 
-        <LegalSection title='9. Service Usage and Limitations'>
+        <LegalSection title='9. Nutzung des Dienstes und Einschränkungen'>
           <Text>
-            CoverLetterGPT provides AI-assisted cover letter generation services. Users 
-            acknowledge and agree to the following terms of use:
+            CoverLetterGPT bietet KI-gestützte Unterstützung bei der Erstellung von Anschreiben. Nutzer erkennen die folgenden Nutzungsbedingungen an:
           </Text>
           <UnorderedList spacing={2} pl={5}>
             <ListItem>
-              The service is provided for example and learning purposes only. Cover letters 
-              generated through our service are meant to serve as templates and examples.
+              Der Dienst dient ausschließlich zu Beispiel- und Lernzwecken. Die generierten Anschreiben sind lediglich Vorlagen.
             </ListItem>
             <ListItem>
-              Users are strongly advised NOT to use AI-generated cover letters directly 
-              for job applications without substantial personal modification and review.
+              Nutzer sollten die AI-generierten Anschreiben nicht unverändert für Bewerbungen verwenden, sondern sie sorgfältig anpassen und prüfen.
             </ListItem>
             <ListItem>
-              We reserve the right to limit, suspend, or terminate access to the service 
-              at our discretion if we detect abuse or violation of these terms.
+              Wir behalten uns vor, den Zugang zum Dienst einzuschränken oder zu sperren, wenn Missbrauch oder Verstöße gegen diese Bedingungen festgestellt werden.
             </ListItem>
             <ListItem>
-              Users are responsible for maintaining the confidentiality of their account 
-              credentials and may not share their account with others.
+              Nutzer sind dafür verantwortlich, ihre Zugangsdaten geheim zu halten und ihr Konto nicht mit Dritten zu teilen.
             </ListItem>
           </UnorderedList>
         </LegalSection>
 
-        <LegalSection title='10. Disclaimer of Liability'>
+        <LegalSection title='10. Haftungsausschluss'>
           <Text>
-            To the maximum extent permitted by applicable law:
+            Soweit gesetzlich zulässig, gilt Folgendes:
           </Text>
           <UnorderedList spacing={2} pl={5}>
             <ListItem>
-              The cover letters generated through our service are provided "AS IS" and 
-              "AS AVAILABLE" without any warranties, express or implied.
+              Die von unserem Dienst erzeugten Anschreiben werden ohne Gewähr bereitgestellt.
             </ListItem>
             <ListItem>
-              We explicitly disclaim any liability for the content, accuracy, or 
-              appropriateness of the generated cover letters for any specific purpose, 
-              including but not limited to job applications.
+              Wir übernehmen keine Haftung für Inhalt, Richtigkeit oder Eignung der generierten Anschreiben für einen bestimmten Zweck, insbesondere nicht für Bewerbungen.
             </ListItem>
             <ListItem>
-              Users assume full responsibility for any use, modification, or submission 
-              of the generated cover letters in job applications or other professional 
-              contexts.
+              Die Verwendung, Anpassung oder Einreichung der Anschreiben erfolgt auf eigene Verantwortung der Nutzer.
             </ListItem>
             <ListItem>
-              We are not liable for any consequences, direct or indirect, arising from 
-              the use of our service, including but not limited to:
+              Wir haften nicht für direkte oder indirekte Folgen der Nutzung unseres Dienstes, insbesondere nicht für:
               <UnorderedList mt={2} pl={5}>
-                <ListItem>Missed job opportunities</ListItem>
-                <ListItem>Rejected applications</ListItem>
-                <ListItem>Professional reputation impact</ListItem>
-                <ListItem>Loss of potential income</ListItem>
-                <ListItem>Any misrepresentation in generated content</ListItem>
-                <ListItem>Technical errors or service interruptions</ListItem>
-                <ListItem>Data loss or security breaches</ListItem>
+                <ListItem>verpasste Jobchancen</ListItem>
+                <ListItem>abgelehnte Bewerbungen</ListItem>
+                <ListItem>Beeinträchtigung des beruflichen Rufs</ListItem>
+                <ListItem>entgangene Einnahmen</ListItem>
+                <ListItem>etwaige Falschdarstellungen in den generierten Inhalten</ListItem>
+                <ListItem>technische Fehler oder Serviceunterbrechungen</ListItem>
+                <ListItem>Datenverlust oder Sicherheitsverletzungen</ListItem>
               </UnorderedList>
             </ListItem>
             <ListItem>
-              While we strive to maintain high accuracy and quality, AI-generated content may 
-              contain errors, inconsistencies, or inappropriate content. Users are strongly 
-              advised to thoroughly review and modify all generated content before use.
+              Trotz größter Sorgfalt kann AI-generierter Inhalt Fehler oder unangemessene Passagen enthalten. Prüfen und bearbeiten Sie daher alle Texte vor einer Verwendung sorgfältig.
             </ListItem>
             <ListItem>
-              We do not guarantee that our service will meet your specific requirements or 
-              expectations, or that it will be compatible with your particular job application 
-              needs.
+              Wir garantieren nicht, dass unser Dienst Ihre individuellen Anforderungen erfüllt oder mit speziellen Bewerbungsanforderungen kompatibel ist.
             </ListItem>
             <ListItem>
-              Our total liability, if any, shall not exceed the amount paid by you 
-              for the service in the month preceding the incident.
+              Unsere Haftung ist, soweit gesetzlich zulässig, auf den Betrag beschränkt, den Sie im Monat vor dem Vorfall für den Dienst gezahlt haben.
             </ListItem>
             <ListItem>
-              Some jurisdictions do not allow the exclusion of certain warranties or 
-              limitations on applicable statutory rights of a consumer, so some or all 
-              of the above exclusions and limitations may not apply to you.
+              In einigen Rechtsordnungen sind bestimmte Haftungsbeschränkungen nicht zulässig; gegebenenfalls gelten die vorstehenden Ausschlüsse daher für Sie nicht.
             </ListItem>
           </UnorderedList>
           <Text mt={4} fontWeight='semibold'>
-            By using our service, you explicitly acknowledge and accept these limitations 
-            and disclaimers.
+            Durch die Nutzung unseres Dienstes erkennen Sie diese Beschränkungen und Haftungsausschlüsse ausdrücklich an.
           </Text>
         </LegalSection>
 
-        <LegalSection title='11. Intellectual Property'>
+        <LegalSection title='11. Geistiges Eigentum'>
           <UnorderedList spacing={2} pl={5}>
             <ListItem>
-              The service, including all software, algorithms, and interface designs, 
-              remains the exclusive property of Canger & Shahab Crimpin GbR.
+              Der Dienst einschließlich aller Software, Algorithmen und Oberflächen bleibt ausschließliches Eigentum der Canger & Shahab Crimpin GbR.
             </ListItem>
             <ListItem>
-              While users retain rights to their personal information and modified cover 
-              letters, the AI-generated content templates are provided under a limited, 
-              non-exclusive license for personal use only.
+              Nutzer behalten die Rechte an ihren eigenen Daten und bearbeiteten Anschreiben; die von der KI generierten Vorlagen werden jedoch nur für die persönliche Nutzung unter einer einfachen Lizenz bereitgestellt.
             </ListItem>
             <ListItem>
-              Users may not reproduce, distribute, or commercialize the service or its 
-              outputs without explicit written permission.
+              Eine Vervielfältigung, Verbreitung oder kommerzielle Nutzung des Dienstes oder seiner Ergebnisse ist ohne ausdrückliche schriftliche Genehmigung untersagt.
             </ListItem>
           </UnorderedList>
         </LegalSection>
 
-        <LegalSection title="12. Security">
+        <LegalSection title="12. Sicherheit">
           <Text>
-            CoverLetterGPT does not process any order payments directly through the website. 
-            All payments are processed securely through Stripe, a third party online 
-            payment provider. When processing payments:
+            CoverLetterGPT verarbeitet keine Zahlungen direkt auf der Website. Alle Zahlungen erfolgen sicher über Stripe als externen Zahlungsanbieter. Bei der Abwicklung gelten folgende Punkte:
           </Text>
           <UnorderedList spacing={2} pl={5}>
             <ListItem>
-              Your payment information is never stored on our servers
+              Ihre Zahlungsinformationen werden nie auf unseren Servern gespeichert
             </ListItem>
             <ListItem>
-              All payment transactions are encrypted and processed securely by Stripe
+              Sämtliche Transaktionen werden verschlüsselt und sicher von Stripe durchgeführt
             </ListItem>
             <ListItem>
-              Stripe is a PCI Service Provider Level 1, which is the highest grade of 
-              payment processing security
+              Stripe ist als PCI Service Provider Level 1 zertifiziert und erfüllt damit höchste Sicherheitsstandards
             </ListItem>
             <ListItem>
-              For more information about Stripe's security measures, please visit 
-              <Link 
-                href="https://stripe.com/docs/security" 
-                target="_blank" 
+              Weitere Informationen zu den Sicherheitsmaßnahmen von Stripe finden Sie unter
+              <Link
+                href="https://stripe.com/docs/security"
+                target="_blank"
                 rel="noopener noreferrer"
                 color="purple.600"
                 _hover={{ color: 'purple.800' }}
                 ml={1}
               >
-                Stripe's Security Documentation
+                Stripes Sicherheitsdokumentation
               </Link>
             </ListItem>
           </UnorderedList>

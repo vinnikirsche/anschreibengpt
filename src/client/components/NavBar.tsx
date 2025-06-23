@@ -60,23 +60,23 @@ export default function NavBar() {
         {user ? (
           <>
             <NavButton icon={<MdWorkOutline />} to='/jobs'>
-              Jobs Dashboard
+              Jobübersicht
             </NavButton>
             <Spacer maxW='3px' />
             <NavButton icon={<CgProfile />} to='/profile'>
-              Account
+              Konto
             </NavButton>
             <MobileButton icon={<AiOutlineMenu />} isUser={true}>
-              Menu
+              Menü
             </MobileButton>
           </>
         ) : (
           <>
             <NavButton icon={<CgProfile />} to='/login'>
-              Login
+              Anmelden
             </NavButton>
             <MobileButton icon={<AiOutlineMenu />} isUser={false}>
-              Menu
+              Menü
             </MobileButton>
           </>
         )}
@@ -140,16 +140,16 @@ function MobileButton({
         {isUser ? (
           <>
             <Link as={RouterLink} to={`/jobs`}>
-              <MenuItem>Jobs Dashboard</MenuItem>
+              <MenuItem>Jobübersicht</MenuItem>
             </Link>
             <Link as={RouterLink} to={`/profile`}>
-              <MenuItem>Account</MenuItem>
+              <MenuItem>Konto</MenuItem>
             </Link>
           </>
         ) : (
           <>
             <Link as={RouterLink} to='/login'>
-              <MenuItem>Login</MenuItem>
+              <MenuItem>Anmelden</MenuItem>
             </Link>
           </>
         )}
