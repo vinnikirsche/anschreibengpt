@@ -1,7 +1,13 @@
-#!/bin/sh
-# Installiere Wasp CLI
+#!/bin/bash
+set -e
+
+# Install Wasp
 curl -sSL https://get.wasp.sh/installer.sh | sh
-# Füge Wasp zum PATH hinzu
-export PATH="/root/.local/bin:$PATH"
-# Führe den übergebenen Befehl aus
-exec "$@"
+export PATH="$HOME/.wasp/bin:$PATH"
+
+# Build the project
+wasp build
+
+# Install server dependencies
+cd .wasp/build
+npm install --production
