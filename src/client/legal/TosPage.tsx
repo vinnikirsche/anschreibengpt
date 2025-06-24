@@ -24,13 +24,13 @@ const TermsOfService = () => {
 
         <LegalSection title='1. Unternehmensangaben (Impressum)'>
           <Text>
-            Canger & Shahab Crimpin GbR
+           GbR
             <br />
-            Zum Steinberg 12, 69121 Heidelberg, Deutschland
+            Deutschland
             <br />
-            E-Mail: info.crimpin@gmail.com
+            E-Mail: @gmail.com
             <br />
-            Vertretungsberechtigte Gesellschafter: Canger & Shahab Crimpin GbR
+             GbR
           </Text>
         </LegalSection>
 
@@ -108,9 +108,9 @@ const TermsOfService = () => {
               <VStack align='stretch' spacing={4} color='text-contrast-lg'>
                 <Box>
                   <Text fontWeight='medium'>An:</Text>
-                  <Text>Canger & Shahab Crimpin GbR</Text>
-                  <Text>Zum Steinberg 12, 69121 Heidelberg, Deutschland</Text>
-                  <Text>E-Mail: info.crimpin@gmail.com</Text>
+                  <Text>CGbR</Text>
+                  <Text> Deutschland</Text>
+                  <Text>gmail.com</Text>
                 </Box>
 
                 <Text>

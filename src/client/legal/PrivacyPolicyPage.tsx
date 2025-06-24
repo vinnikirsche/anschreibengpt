@@ -22,7 +22,7 @@ const PrivacyPolicy = () => {
 
         <LegalSection title='1. Einleitung'>
           <Text>
-            Canger & Shahab Crimpin GbR ("wir" oder "uns") betreibt CoverLetterGPT.
+            ("wir" oder "uns") betreibt CoverLetterGPT.
             Diese Seite informiert Sie über unsere Richtlinien zur Erhebung,
             Nutzung und Offenlegung personenbezogener Daten, wenn Sie unseren Dienst
             nutzen, sowie über Ihre Wahlmöglichkeiten in Bezug auf diese Daten.
@@ -33,11 +33,11 @@ const PrivacyPolicy = () => {
           <Text>
             Verantwortlich für Ihre personenbezogenen Daten ist:
             <br />
-            Canger & Shahab Crimpin GbR
+           GbR
             <br />
-            Zum Steinberg 12, 69121 Heidelberg, Deutschland
+            ZDeutschland
             <br />
-            E-Mail: info.crimpin@gmail.com
+            E-Mail: @gmail.com
           </Text>
         </LegalSection>
 
