@@ -63,19 +63,19 @@ export default function LoginModal({ status, encodedUrl, isOpen, onClose, handle
     <Modal isOpen={isOpen} onClose={onClose} initialFocusRef={buttonRef} >
       <ModalOverlay backdropFilter='auto' backdropInvert='15%' backdropBlur='2px' />
       <ModalContent maxH='lg' maxW='lg' bgColor='bg-modal'>
-        <ModalHeader>Lightning Login</ModalHeader>
+        <ModalHeader>Lightning-Anmeldung</ModalHeader>
         <ModalCloseButton />
         <ModalBody>
           <VStack gap={3}>
             <Box>{content}</Box>
             <HStack>
               <Button id='copy-button' onClick={handleCopyClick}>
-                Copy
+                Kopieren
               </Button>
               {!!encodedUrl && (
                 <a href={`lightning:${encodedUrl}`}>
                   <Button id='open-button' onClick={handleWalletClick} ref={buttonRef}>
-                    Login with ⚡ Wallet
+                    Mit ⚡ Wallet anmelden
                   </Button>
                 </a>
               )}
@@ -84,7 +84,7 @@ export default function LoginModal({ status, encodedUrl, isOpen, onClose, handle
         </ModalBody>
         <ModalFooter>
           <Button size='sm' variant='outline' onClick={onClose}>
-            Close
+            Schließen
           </Button>
         </ModalFooter>
       </ModalContent>

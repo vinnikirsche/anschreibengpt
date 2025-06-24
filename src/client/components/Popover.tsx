@@ -126,23 +126,23 @@ export function EditPopover({ setTooltip, selectedText, user, ...props }: EditPo
       <VStack {...props} gap={1} bgColor='bg-modal' borderRadius='lg' boxShadow='2xl'>
         <Box layerStyle='cardLg' p={3}>
           <Text fontSize='sm' textAlign='center'>
-            🤔 Ask GPT to make this part more..
+            🤔 GPT um Verbesserungen bitten...
           </Text>
           <ButtonGroup size='xs' p={1} variant='solid' colorScheme='purple' isAttached>
             <Button size='xs' color='black' fontSize='xs' onClick={() => handleClick('concise')}>
-              Concise
+              Kürzer
             </Button>
 
             <Button size='xs' color='black' fontSize='xs' onClick={() => handleClick('detailed')}>
-              Detailed
+              Ausführlicher
             </Button>
 
             <Button size='xs' color='black' fontSize='xs' onClick={() => handleClick('Professional')}>
-              Professional
+              Professioneller
             </Button>
 
             <Button size='xs' color='black' fontSize='xs' onClick={() => handleClick('informal')}>
-              Informal
+              Lockerer
             </Button>
           </ButtonGroup>
         </Box>

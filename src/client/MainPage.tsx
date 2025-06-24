@@ -316,7 +316,7 @@ function MainPage() {
 
   function setLoadingText() {
     setLoadingTextTimeout = setTimeout(() => {
-      loadingTextRef.current && (loadingTextRef.current.innerText = ' patience, my friend 🧘...');
+      loadingTextRef.current && (loadingTextRef.current.innerText = ' Geduld, mein Freund 🧘...');
     }, 2000);
   }
 
@@ -374,7 +374,7 @@ function MainPage() {
         >
 
             <Heading size={'md'} alignSelf={'start'} mb={3} w='full'>
-              Job Info {isCoverLetterUpdate && <Code ml={1}>Editing...</Code>}
+              Job-Informationen {isCoverLetterUpdate && <Code ml={1}>Bearbeitung...</Code>}
             </Heading>
 
           {showSpinner && <Spinner />}
@@ -385,7 +385,7 @@ function MainPage() {
                   id='title'
                   borderRadius={0}
                   borderTopRadius={7}
-                  placeholder='job title'
+                  placeholder='Jobtitel'
                   {...register('title', {
                     required: 'This is required',
                     minLength: {
@@ -407,7 +407,7 @@ function MainPage() {
                 <Input
                   id='company'
                   borderRadius={0}
-                  placeholder='company'
+                  placeholder='Unternehmen'
                   {...register('company', {
                     required: 'This is required',
                     minLength: {
@@ -423,7 +423,7 @@ function MainPage() {
                 <Input
                   id='location'
                   borderRadius={0}
-                  placeholder='location'
+                  placeholder='Ort'
                   {...register('location', {
                     required: 'This is required',
                     minLength: {
@@ -439,7 +439,7 @@ function MainPage() {
                 <Textarea
                   id='description'
                   borderRadius={0}
-                  placeholder='copy & paste the job description in any language'
+                  placeholder='Kopiere die Stellenbeschreibung in beliebiger Sprache'
                   {...register('description', {
                     required: 'This is required',
                   })}
@@ -453,7 +453,7 @@ function MainPage() {
                   id='pdf'
                   type='file'
                   accept='application/pdf'
-                  placeholder='pdf'
+                  placeholder='PDF'
                   {...register('pdf', {
                     required: 'Please upload a CV/Resume',
                   })}
@@ -480,14 +480,14 @@ function MainPage() {
                   <HStack>
                     <FormLabel textAlign='center' htmlFor='pdf'>
                       <Button size='sm' colorScheme='contrast' onClick={handleFileButtonClick}>
-                        Upload CV
+                        Lebenslauf hochladen
                       </Button>
                     </FormLabel>
-                    {isPdfReady && <Text fontSize={'sm'}>👍 uploaded</Text>}
+                    {isPdfReady && <Text fontSize={'sm'}>👍 hochgeladen</Text>}
                     <FormErrorMessage>{!!formErrors.pdf && formErrors.pdf.message?.toString()}</FormErrorMessage>
                   </HStack>
                   <FormHelperText mt={0.5} fontSize={'xs'}>
-                    Upload a PDF only of Your CV/Resumé
+                    Lade nur eine PDF deines Lebenslaufs hoch
                   </FormHelperText>
                 </VStack>
               </FormControl>
@@ -571,7 +571,7 @@ function MainPage() {
                       color: 'text-contrast-lg',
                     }}
                   >
-                    cover letter creativity level
+                    Kreativitätsgrad des Anschreibens
                   </FormLabel>
                 </FormControl>
               </VStack>
@@ -602,7 +602,7 @@ function MainPage() {
                       color: 'text-contrast-lg',
                     }}
                   >
-                    include a witty remark at the end of the letter
+                    Einen witzigen Satz am Ende des Anschreibens hinzufügen
                   </FormLabel>
                 </FormControl>
               </VStack>
@@ -615,7 +615,7 @@ function MainPage() {
                   disabled={user === null}
                   type='submit'
                 >
-                  {!isCoverLetterUpdate ? 'Generate Cover Letter' : 'Create New Cover Letter'}
+                  {!isCoverLetterUpdate ? 'Anschreiben generieren' : 'Neues Anschreiben erstellen'}
                 </Button>
                 <Text ref={loadingTextRef} fontSize='sm' fontStyle='italic' color='text-contrast-md'>
                   {' '}
@@ -626,7 +626,7 @@ function MainPage() {
           {showJobNotFound && (
             <>
               <Text fontSize='sm' color='text-contrast-md'>
-                Can't find that job...
+                Job nicht gefunden...
               </Text>
             </>
           )}

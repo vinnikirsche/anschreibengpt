@@ -17,229 +17,221 @@ const PrivacyPolicy = () => {
   return (
     <BorderBox>
       <VStack maxW='4xl' mx='auto' p={6} spacing={6} align='flex-start'>
-        <Heading as='h1' size='xl' mb={6}>Privacy Policy</Heading>
+        <Heading as='h1' size='xl' mb={6}>Datenschutzerklärung</Heading>
         <Text fontSize='sm' color='gray.600' mb={6}>Last updated: {new Date().toLocaleDateString()}</Text>
 
-        <LegalSection title='1. Introduction'>
+        <LegalSection title='1. Einleitung'>
           <Text>
-            Canger & Shahab Crimpin GbR ("we", "us", or "our") operates CoverLetterGPT. 
-            This page informs you of our policies regarding the collection, use, and 
-            disclosure of personal data when you use our Service and the choices you 
-            have associated with that data.
+            ("wir" oder "uns") betreibt CoverLetterGPT.
+            Diese Seite informiert Sie über unsere Richtlinien zur Erhebung,
+            Nutzung und Offenlegung personenbezogener Daten, wenn Sie unseren Dienst
+            nutzen, sowie über Ihre Wahlmöglichkeiten in Bezug auf diese Daten.
           </Text>
         </LegalSection>
 
-        <LegalSection title='2. Data Controller Information'>
+        <LegalSection title='2. Verantwortlicher'>
           <Text>
-            The data controller for your personal data is:
+            Verantwortlich für Ihre personenbezogenen Daten ist:
             <br />
-            Canger & Shahab Crimpin GbR
+           GbR
             <br />
-            Zum Steinberg 12, 69121 Heidelberg, Germany
+            ZDeutschland
             <br />
-            Email: info.crimpin@gmail.com
+            E-Mail: @gmail.com
           </Text>
         </LegalSection>
 
-        <LegalSection title='3. Data We Collect'>
-          <Text mb={4}>We collect several different types of information for various purposes:</Text>
+        <LegalSection title='3. Welche Daten wir erheben'>
+          <Text mb={4}>Wir erfassen unterschiedliche Kategorien personenbezogener Daten für verschiedene Zwecke:</Text>
           <UnorderedList spacing={4}>
             <ListItem>
-              <Text fontWeight='semibold'>Account Data:</Text>
+              <Text fontWeight='semibold'>Kontodaten:</Text>
               <UnorderedList ml={6} mt={2} spacing={2}>
-                <ListItem>Email address</ListItem>
+                <ListItem>E-Mail-Adresse</ListItem>
                 <ListItem>Name</ListItem>
-                <ListItem>Password (encrypted)</ListItem>
-                <ListItem>Profile information</ListItem>
-                <ListItem>Account settings</ListItem>
+                <ListItem>Passwort (verschlüsselt)</ListItem>
+                <ListItem>Profilinformationen</ListItem>
+                <ListItem>Kontoeinstellungen</ListItem>
               </UnorderedList>
             </ListItem>
             <ListItem>
-              <Text fontWeight='semibold'>Usage Data:</Text>
+              <Text fontWeight='semibold'>Nutzungsdaten:</Text>
               <UnorderedList ml={6} mt={2} spacing={2}>
-                <ListItem>Access times and dates</ListItem>
+                <ListItem>Zugriffszeiten und -daten</ListItem>
               </UnorderedList>
             </ListItem>
             <ListItem>
-              <Text fontWeight='semibold'>Content Data:</Text>
+              <Text fontWeight='semibold'>Inhaltsdaten:</Text>
               <UnorderedList ml={6} mt={2} spacing={2}>
-                <ListItem>CV information you provide</ListItem>
-                <ListItem>Job descriptions you input</ListItem>
-                <ListItem>Generated (example)cover letters</ListItem>
+                <ListItem>Von Ihnen bereitgestellte Lebenslaufdaten</ListItem>
+                <ListItem>Von Ihnen eingegebene Stellenbeschreibungen</ListItem>
+                <ListItem>Generierte Beispielanschreiben</ListItem>
               </UnorderedList>
             </ListItem>
             <ListItem>
-              <Text fontWeight='semibold'>Payment Data:</Text>
+              <Text fontWeight='semibold'>Zahlungsdaten:</Text>
               <UnorderedList ml={6} mt={2} spacing={2}>
-                <ListItem>Payment history</ListItem>
-                <ListItem>Subscription status</ListItem>
-                <ListItem>Note: Payment processing is handled by Stripe</ListItem>
+                <ListItem>Zahlungshistorie</ListItem>
+                <ListItem>Abonnementstatus</ListItem>
+                <ListItem>Hinweis: Die Zahlungsabwicklung erfolgt über Stripe</ListItem>
               </UnorderedList>
             </ListItem>
           </UnorderedList>
         </LegalSection>
 
-        <LegalSection title='4. How We Use Your Data'>
+        <LegalSection title='4. Wie wir Ihre Daten verwenden'>
           <UnorderedList spacing={4}>
             <ListItem>
-              <Text fontWeight='semibold'>To Provide Our Service:</Text>
+              <Text fontWeight='semibold'>Zur Bereitstellung unseres Dienstes:</Text>
               <UnorderedList ml={6} mt={2} spacing={2}>
-                <ListItem>Generate personalized cover letters</ListItem>
-                <ListItem>Manage your account</ListItem>
-                <ListItem>Process your payments</ListItem>
+                <ListItem>Personalisierte Anschreiben generieren</ListItem>
+                <ListItem>Ihr Konto verwalten</ListItem>
+                <ListItem>Ihre Zahlungen abwickeln</ListItem>
               </UnorderedList>
             </ListItem>
             <ListItem>
-              <Text fontWeight='semibold'>To Improve Our Service:</Text>
+              <Text fontWeight='semibold'>Zur Verbesserung unseres Dienstes:</Text>
               <UnorderedList ml={6} mt={2} spacing={2}>
-                <ListItem>Analyze usage patterns</ListItem>
-                <ListItem>Debug technical issues</ListItem>
-                <ListItem>Enhance user experience</ListItem>
+                <ListItem>Nutzungsmuster analysieren</ListItem>
+                <ListItem>Technische Probleme beheben</ListItem>
+                <ListItem>Benutzererfahrung verbessern</ListItem>
               </UnorderedList>
             </ListItem>
             <ListItem>
-              <Text fontWeight='semibold'>To Communicate With You:</Text>
+              <Text fontWeight='semibold'>Zur Kommunikation mit Ihnen:</Text>
               <UnorderedList ml={6} mt={2} spacing={2}>
-                <ListItem>Send service updates</ListItem>
-                <ListItem>Respond to your requests</ListItem>
-                <ListItem>Provide customer support</ListItem>
+                <ListItem>Service-Updates versenden</ListItem>
+                <ListItem>Auf Ihre Anfragen reagieren</ListItem>
+                <ListItem>Kundensupport bieten</ListItem>
               </UnorderedList>
             </ListItem>
           </UnorderedList>
         </LegalSection>
 
-        <LegalSection title='5. Legal Basis for Processing'>
+        <LegalSection title='5. Rechtsgrundlagen der Verarbeitung'>
           <UnorderedList spacing={4}>
             <ListItem>
-              <Text fontWeight='semibold' as='span'>Contract Performance: </Text>
-              Processing necessary for the performance of our contract with you
+              <Text fontWeight='semibold' as='span'>Vertragserfüllung: </Text>
+              Verarbeitung, die für die Erfüllung unseres Vertrags mit Ihnen erforderlich ist
             </ListItem>
             <ListItem>
-              <Text fontWeight='semibold' as='span'>Legal Obligations: </Text>
-              Processing necessary for compliance with legal obligations
+              <Text fontWeight='semibold' as='span'>Gesetzliche Verpflichtungen: </Text>
+              Verarbeitung, die zur Einhaltung gesetzlicher Pflichten notwendig ist
             </ListItem>
             <ListItem>
-              <Text fontWeight='semibold' as='span'>Legitimate Interests: </Text>
-              Processing based on our legitimate interests in improving and promoting our services
+              <Text fontWeight='semibold' as='span'>Berechtigte Interessen: </Text>
+              Verarbeitung aufgrund unserer berechtigten Interessen an der Verbesserung und Vermarktung unserer Dienste
             </ListItem>
             <ListItem>
-              <Text fontWeight='semibold' as='span'>Consent: </Text>
-              Processing based on your specific consent where required
+              <Text fontWeight='semibold' as='span'>Einwilligung: </Text>
+              Verarbeitung auf Grundlage Ihrer ausdrücklichen Einwilligung, sofern erforderlich
             </ListItem>
           </UnorderedList>
         </LegalSection>
 
-        <LegalSection title='6. Data Retention'>
+        <LegalSection title='6. Speicherdauer'>
           <Text mb={4}>
-            We retain your personal data only for as long as necessary to fulfill the 
-            purposes for which we collected it, including:
+            Wir bewahren Ihre personenbezogenen Daten nur so lange auf, wie dies zur Erfüllung
+            der Zwecke erforderlich ist, für die wir sie erhoben haben:
           </Text>
           <UnorderedList spacing={2}>
-            <ListItem>Account data: As long as your account is active</ListItem>
-            <ListItem>Generated content: For as long as necessary to provide our services or until you delete your account</ListItem>
-            <ListItem>Payment records: As required by tax laws (typically 10 years in Germany)</ListItem>
+            <ListItem>Kontodaten: solange Ihr Konto aktiv ist</ListItem>
+            <ListItem>Generierte Inhalte: solange notwendig zur Bereitstellung unserer Dienste oder bis zur Löschung Ihres Kontos</ListItem>
+            <ListItem>Zahlungsnachweise: gemäß steuerrechtlichen Vorgaben (in Deutschland meist 10 Jahre)</ListItem>
           </UnorderedList>
         </LegalSection>
 
-        <LegalSection title='7. Your Data Protection Rights'>
-          <Text mb={4}>Under GDPR, you have the following rights:</Text>
+        <LegalSection title='7. Ihre Datenschutzrechte'>
+          <Text mb={4}>Nach der DSGVO stehen Ihnen insbesondere folgende Rechte zu:</Text>
           <UnorderedList spacing={2} mb={4}>
-            <ListItem>Right to access your personal data</ListItem>
-            <ListItem>Right to rectification of inaccurate data</ListItem>
-            <ListItem>Right to erasure ("right to be forgotten")</ListItem>
-            <ListItem>Right to restrict processing</ListItem>
-            <ListItem>Right to data portability</ListItem>
-            <ListItem>Right to object to processing</ListItem>
-            <ListItem>Right to withdraw consent</ListItem>
+            <ListItem>Auskunft über Ihre gespeicherten personenbezogenen Daten</ListItem>
+            <ListItem>Berichtigung unrichtiger Daten</ListItem>
+            <ListItem>Löschung Ihrer Daten ("Recht auf Vergessenwerden")</ListItem>
+            <ListItem>Einschränkung der Verarbeitung</ListItem>
+            <ListItem>Datenübertragbarkeit</ListItem>
+            <ListItem>Widerspruch gegen die Verarbeitung</ListItem>
+            <ListItem>Widerruf erteilter Einwilligungen</ListItem>
           </UnorderedList>
           <Text>
-            To exercise these rights, please contact us at info.crimpin@gmail.com
+            Zur Ausübung dieser Rechte kontaktieren Sie uns bitte unter info.crimpin@gmail.com
           </Text>
         </LegalSection>
 
-        <LegalSection title='8. Data Sharing and Third Parties'>
-          <Text mb={4}>We share your data with the following third parties:</Text>
+        <LegalSection title='8. Weitergabe von Daten an Dritte'>
+          <Text mb={4}>Wir geben Ihre Daten an folgende Drittanbieter weiter:</Text>
           <UnorderedList spacing={4} mb={4}>
             <ListItem>
               <Text fontWeight='semibold' as='span'>Stripe: </Text>
-              For payment processing
+              Zur Zahlungsabwicklung
             </ListItem>
             <ListItem>
               <Text fontWeight='semibold' as='span'>OpenAI: </Text>
-              For AI-powered content generation
+              Für die KI-gestützte Inhaltserstellung
             </ListItem>
           </UnorderedList>
           <Text>
-            All third parties are contractually obligated to protect your data and 
-            may only use it for specified purposes.
+            Alle Dritten sind vertraglich verpflichtet, Ihre Daten zu schützen und
+            sie nur zu den angegebenen Zwecken zu verwenden.
           </Text>
         </LegalSection>
 
-        <LegalSection title='9. International Data Transfers'>
+        <LegalSection title='9. Internationale Datenübermittlungen'>
           <Text mb={4}>
-            Your data may be transferred to and processed in countries outside the EU. 
-            When this occurs, we ensure appropriate safeguards are in place through:
+            Ihre Daten können in Länder außerhalb der EU übermittelt und dort verarbeitet werden.
+            Dabei stellen wir geeignete Schutzmaßnahmen sicher durch:
           </Text>
           <UnorderedList spacing={2}>
-            <ListItem>EU Standard Contractual Clauses</ListItem>
-            <ListItem>Adequacy decisions by the European Commission</ListItem>
-            <ListItem>Other legally recognized transfer mechanisms</ListItem>
+            <ListItem>EU-Standardvertragsklauseln</ListItem>
+            <ListItem>Angemessenheitsbeschlüsse der Europäischen Kommission</ListItem>
+            <ListItem>Andere gesetzlich anerkannte Übermittlungsmechanismen</ListItem>
           </UnorderedList>
         </LegalSection>
 
-        <LegalSection title='10. Cookies and Tracking'>
+        <LegalSection title='10. Cookies und Tracking'>
           <Text mb={4}>
-            Our service does not use cookies or tracking technologies. We prioritize your privacy 
-            and have designed our service to function without the need for cookies or similar 
-            tracking mechanisms.
+            Unser Dienst verwendet keine Cookies oder Tracking-Technologien. Wir legen großen Wert auf Ihre Privatsphäre
+            und haben den Service so gestaltet, dass er ohne Cookies oder ähnliche Mechanismen funktioniert.
           </Text>
           <Text>
-            Any essential session management is handled securely through standard authentication 
-            tokens that are automatically cleared when you log out or close your browser.
+            Notwendige Sitzungen werden sicher über standardisierte Authentifizierungs-Token verwaltet,
+            die automatisch gelöscht werden, wenn Sie sich abmelden oder den Browser schließen.
           </Text>
         </LegalSection>
 
-        <LegalSection title='11. Data Security'>
+        <LegalSection title='11. Datensicherheit'>
           <Text mb={4}>
-            We implement appropriate technical and organizational measures to protect 
-            your personal data, including:
+            Wir ergreifen angemessene technische und organisatorische Maßnahmen zum Schutz Ihrer Daten, darunter:
           </Text>
           <UnorderedList spacing={2}>
-            <ListItem>Regular security assessments</ListItem>
-            <ListItem>Access controls and authentication</ListItem>
-            <ListItem>Regular backups</ListItem>
-            <ListItem>Staff training on data protection</ListItem>
+            <ListItem>Regelmäßige Sicherheitsüberprüfungen</ListItem>
+            <ListItem>Zugangskontrollen und Authentifizierung</ListItem>
+            <ListItem>Regelmäßige Backups</ListItem>
+            <ListItem>Schulung unserer Mitarbeitenden zum Datenschutz</ListItem>
           </UnorderedList>
         </LegalSection>
 
-        <LegalSection title='12. Changes to This Privacy Policy'>
+        <LegalSection title='12. Änderungen dieser Datenschutzerklärung'>
           <Text mb={4}>
-            We may update our Privacy Policy from time to time. We will notify you of 
-            any changes by posting the new Privacy Policy on this page and updating 
-            the "Last updated" date.
+            Wir können diese Datenschutzerklärung gelegentlich anpassen. Über Änderungen informieren wir,
+            indem wir die neue Fassung auf dieser Seite veröffentlichen und das Datum der letzten Aktualisierung anpassen.
           </Text>
           <Text>
-            You are advised to review this Privacy Policy periodically for any changes. 
-            Changes to this Privacy Policy are effective when they are posted on this page.
+            Bitte prüfen Sie diese Seite regelmäßig. Änderungen treten in Kraft, sobald sie hier veröffentlicht werden.
           </Text>
         </LegalSection>
 
-        <LegalSection title='13. Contact Us'>
+        <LegalSection title='13. Kontakt'>
           <Text mb={4}>
-            If you have any questions about this Privacy Policy or our data practices, 
-            please contact us:
+            Wenn Sie Fragen zu dieser Datenschutzerklärung oder unseren Datenschutzpraktiken haben,
+            kontaktieren Sie uns bitte:
           </Text>
           <UnorderedList spacing={2} mb={4}>
-            <ListItem>
-              By email: info.crimpin@gmail.com
-            </ListItem>
-            <ListItem>
-              By mail: Canger & Shahab Crimpin GbR, Zum Steinberg 12, 69121 Heidelberg, Germany
-            </ListItem>
+            <ListItem>Per E-Mail: info.crimpin@gmail.com</ListItem>
+            <ListItem>Per Post: Canger & Shahab Crimpin GbR, Zum Steinberg 12, 69121 Heidelberg, Deutschland</ListItem>
           </UnorderedList>
           <Text>
-            You have the right to lodge a complaint with a supervisory authority if you 
-            believe our processing of your personal data violates data protection laws.
+            Sie haben zudem das Recht, sich bei einer Aufsichtsbehörde zu beschweren,
+            falls Sie der Ansicht sind, dass wir Ihre Daten nicht datenschutzkonform verarbeiten.
           </Text>
         </LegalSection>
       </VStack>
